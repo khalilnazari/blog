@@ -1,11 +1,15 @@
 import React from 'react';
 import './home.scss'
+import {Header, Posts} from '../../components'
 
 const Home = () => {
     return (
-        <div>
-            Home            
-        </div>
+        <>
+            <Header />
+            <div className="home container">
+                <Posts />
+            </div>
+        </>
     );
 };
 

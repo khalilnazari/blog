@@ -1,10 +1,12 @@
-import logo from './logo.svg';
-import './pp.scss';
-
+import './app.scss';
+import { Home } from './containers';
+import {BrowserRouter} from 'react-router-dom'
 function App() {
   return (
     <div className="App">
-      Reactjs blog
+      <BrowserRouter>
+        <Home />
+      </BrowserRouter>
     </div>
   );
 }
